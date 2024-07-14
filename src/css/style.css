@@ -1,0 +1,60 @@
+/* Base styling for the search container */
+.search-container {
+    position: relative;
+    max-width: 800px; /* Adjust based on your layout preferences */
+    margin: 40px auto; /* Centering the search box */
+    padding: 15px;
+}
+
+/* Styling for the search input */
+.search-input {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px; /* Larger font size for better readability */
+    border: 1px solid #ddd; /* Subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+/* Grid layout for movie cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Responsive grid */
+    gap: 15px; /* Space between cards */
+    margin-top: 20px; /* Space below the search box */
+}
+
+/* Individual movie card styling */
+.movie-card {
+    border: 1px solid #ccc; /* Light border for definition */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures content fits within the borders */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.movie-card:hover {
+    transform: scale(1.03); /* Slight scale to indicate interactivity */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* More pronounced shadow on hover */
+}
+
+.movie-card img {
+    width: 100%; /* Ensures image covers the card */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Removes bottom space/gap */
+}
+
+.movie-card .info {
+    padding: 10px; /* Padding inside the card */
+    text-align: center; /* Center the text */
+}
+
+.movie-card .title {
+    font-size: 14px; /* Font size for titles */
+    font-weight: bold; /* Make titles bold */
+    margin-bottom: 5px; /* Space below title */
+}
+
+.movie-card .year {
+    font-size: 12px; /* Smaller font size for year */
+    color: #666; /* Lighter text color for less emphasis */
+}

@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0.8rem 2rem;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    padding: 0 1rem;
+    text-decoration: none;
+}
+
+.search-input {
+    padding: 0.5rem 1rem;
+    width: 200px;   
+}
+
+.suggestions-list {
+    position: absolute;
+    background: white;
+    color: black;
+    width: 200px;   
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+    border-radius: 0 0 5px 5px;
+}
+
+.suggestions-list li {
+    padding: 8px;
+    cursor: pointer;
+}
+
+.suggestions-list li:hover {
+    background-color: #f8f8f8;
+}
